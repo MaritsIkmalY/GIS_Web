@@ -1,0 +1,123 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "properties": {
+                "name": "Taman Nasional Komodo",
+                "deskripsi": "deskripsi"
+            },
+            "geometry": {
+                "coordinates": [119.5013305619837,
+                    -8.56759669211796
+                ],
+                "type": "Point"
+            }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "name": "Taman Nasional Gunung Rinjani",
+                "deskripsi": "deskripsi"
+            },
+            "geometry": {
+                "coordinates": [116.43593408744749,
+                    -8.423525109954895
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Taman Nasional Bali Barat",
+                "deskripsi": "deskripsi"
+            },
+            "geometry": {
+                "coordinates": [114.49680796797031,
+                    -8.154270215339864
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Taman Nasional kelimutu",
+                "deskripsi": "deskripsi"
+            },
+            "geometry": {
+                "coordinates": [121.66023165019652,
+                    -8.839155021220463
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Taman Nasional Laiwangi Wanggameti",
+                "deskripsi": "deskripsi"
+            },
+            "geometry": {
+                "coordinates": [120.0089877, -10.0012927],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Taman Nasional Manupeu-Tanah Daru",
+                "deskripsi": "deskripsi"
+            },
+            "geometry": {
+                "coordinates": [119.4994949, -9.5777936],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Taman Nasional Laiwangi Wanggameti",
+                "deskripsi": "deskripsi"
+            },
+            "geometry": {
+                "coordinates": [120.0089877, -10.0012927],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Taman Nasional Laiwangi Wanggameti",
+                "deskripsi": "deskripsi"
+            },
+            "geometry": {
+                "coordinates": [120.0089877, -10.0012927],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Taman Nasional Laiwangi Wanggameti",
+                "deskripsi": "deskripsi"
+            },
+            "geometry": {
+                "coordinates": [120.0089877, -10.0012927],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Taman Nasional Laiwangi Wanggameti",
+                "deskripsi": "deskripsi"
+            },
+            "geometry": {
+                "coordinates": [120.0089877, -10.0012927],
+                "type": "Point"
+            }
+        }
+
+
+    ]
+}
