@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
 
     <title>Web GIS</title>
 
-    <!-- Scripts -->
+<!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 
@@ -19,7 +19,10 @@
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+        crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/feather-icons"></script>
 
     <link rel="stylesheet" href="{{ URL::asset('assets/style.css') }}">
 

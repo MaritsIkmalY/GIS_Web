@@ -1,0 +1,20 @@
+{
+    "type" : "FeatureCollection",
+    "features" : [
+        {
+            "type": "Feature",
+            "properties": {
+                "name" : "Bangkalan",
+                "umr" : "2.152.450",
+                "penduduk" : "1.101.556",
+                "pendidikan" : 0.52,
+                "miskin" : "215.970"
+            },
+            "geometry": {
+                "coordinates": [112.913669, -7.038375],
+                "type": "Point"
+            }
+
+        }
+    ]
+}

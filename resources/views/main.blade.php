@@ -1,22 +1,25 @@
 <x-main-layout>
-    <div id="beranda">Haloo</div>
-    <div>ini map</div>
-    <div id="map"></div>
-    <div id="contact">Ini Kontak</div>
+    <x-hero/>
+    <x-about/>
+    <x-map/>
+    <div id="legend" class="leaflet-control"></div>
+    <div id="legend2" class="leaflet-control"></div>
+    <x-our-team/>
+    <x-contact/>
     <script>
-        function getColor(mark){
-            return mark > 10 ? 'red' :
-            mark > 8 ? 'yellow' :
-            mark > 6 ? 'green' :
-            mark > 4 ? 'blue' :
-            mark > 2 ? 'magenta' :
-            'purple';
+
+
+        function getColor(zone) {
+            return zone > 200 ? 'red' :
+                zone > 150 ? 'orange' :
+                zone > 100 ? 'yellow' :
+                'green';
         }
 
-        function style(feature){
+        function style(feature) {
             return {
-                fillColor : getColor(feature.properties.remark),
-                weight : 1,
+                fillColor: getColor(feature.properties.miskin),
+                weight: 2,
             };
         }
 
@@ -24,21 +27,43 @@
             geoLayer = L.geoJson(json, {
                 onEachFeature: function(feature, layer) {
                     var properties = feature.properties;
-
-                    // Mendapatkan informasi yang diinginkan dari properti
-                    var nama = properties.wadmkk;
-
-                    // Mendapatkan koordinat
-                    var coordinates = feature.geometry.coordinates;
-
-                    // Membuat popup dengan informasi titik
-                    var popupContent = "<strong>Kota : </strong> " + nama
+                    var popupContent = '<div>';
+                    popupContent += '<h3 style="text-align: center;">' + properties.name + '</h3>';
+                    popupContent += '<br><strong>Jumlah Penduduk :</strong><br>' + properties.penduduk;
+                    popupContent += '<br><strong>Penduduk Miskin :</strong><br>' + properties.miskin *
+                        1000;
+                    popupContent += '<br><strong>UMR : </strong><br>' + "Rp. " + properties.umr;
+                    popupContent += '<br><strong>Pendidikan :</strong><br>' + properties.pendidikan;
+                    popupContent += '</div>';
                     layer.bindPopup(popupContent);
                 },
-                style : style
+                style: style
             }).addTo(map);
         });
 
+        // $.getJSON('geojson/data.geojson', function(data) {
+        //     L.geoJSON(data, {
+        //         pointToLayer: function(feature, latlng) {
+        //             return L.marker(latlng, {
+        //                 // icon: officeIcon
+        //             });
+        //         },
 
+        //         onEachFeature: function(feature, layer) {
+        //             var properties = feature.properties;
+
+        //             var popupContent = '<div>';
+        //             popupContent += '<h3 style="text-align: center;">' + properties.name + '</h3>';
+        //             popupContent += '<br><strong>Jumlah Penduduk :</strong><br>' + properties.penduduk;
+        //             popupContent += '<br><strong>Penduduk Miskin :</strong><br>' + properties.miskin;
+        //             popupContent += '<br><strong>UMR : RP.</strong><br>' + properties.umr;
+        //             popupContent += '<br><strong>Pendidikan :</strong><br>' + properties.pendidikan;
+        //             popupContent += '</div>';
+        //             layer.bindPopup(popupContent);
+        //         }
+        //     }).addTo(map);
+        // });
+
+        feather.replace()
     </script>
 </x-main-layout>

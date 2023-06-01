@@ -3,3 +3,23 @@
     width: 80vw;
     margin: 0 auto;
 }
+
+#legend {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#legend2 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
